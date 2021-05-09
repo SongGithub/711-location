@@ -34,5 +34,5 @@ This repo has included executables ready for use:
 However, it is fine if you
 want to take precautions and only run executables that you built for yourself.
 
-i.e. for Windows `GOOS=windows go build`
-i.e. for Mac     `GOOS=darwin go build`
+- i.e. for Windows `GOOS=windows go build`
+- i.e. for Mac     `GOOS=darwin go build`
