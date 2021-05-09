@@ -1,4 +1,4 @@
-module 711-location
+module github.com/SongGithub/711-location
 
 go 1.16
 
