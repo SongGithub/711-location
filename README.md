@@ -5,12 +5,18 @@ with the best fuel prices. It has been a pain for me to search GoogleMap for GPS
 coordinates, which gets consumed in GPS location mocking apps for *locking*
 desired fuel price.
 
-## How to use
+## How to run - Windows
+
+- open Powershell window, and run following command from the Powershell window.
+- `cd <path-to-executables>`
+- `711-location.exe`
+
+## How to override default fuel type
 
 - Default case `./711-location`
 - To override **default fuel type which is Unleaded-91** *U91*: set environment variable `FUEL_TYPE`.
     - i.e. in Mac `FUEL_TYPE=U95 ./711-location`
-    - i.e. in Windows `set FUEL_TYPE=U95`, `cd <path-to-executables>`, `711-location.exe`
+    - i.e. in Windows `set FUEL_TYPE=U95`, `711-location.exe`
 - Available fuel types to choose from:
     - E10
     - U91
