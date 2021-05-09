@@ -8,8 +8,9 @@ desired fuel price.
 ## How to use
 
 - Default case `./711-location`
-- To override default fuel type which is *U91*: set environment variable `FUEL_TYPE`.
-i.e. `FUEL_TYPE=U95 ./711-location`
+- To override **default fuel type which is Unleaded-91** *U91*: set environment variable `FUEL_TYPE`.
+    - i.e. in Mac `FUEL_TYPE=U95 ./711-location`
+    - i.e. in Windows `set FUEL_TYPE=U95`, `cd <path-to-executables>`, `711-location.exe`
 - Available fuel types to choose from:
     - E10
     - U91
@@ -17,7 +18,6 @@ i.e. `FUEL_TYPE=U95 ./711-location`
     - U98
     - Diesel
     - LPG
-
 
 ## How to compile your own executables
 
