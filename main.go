@@ -67,7 +67,7 @@ func main() {
 			for _, t := range prices {
 				if t.Type == cfg.FuelType {
 					// TODO: add error-handling here when coordinates can't be located
-					fmt.Print("Latitude（经度）:", t.Lat, "\n", "Longitude（纬度）:", t.Lng, "\n")
+					fmt.Print("Latitude（纬度）:", t.Lat, "\n", "Longitude（经度）:", t.Lng, "\n")
 				}
 			}
 		}
