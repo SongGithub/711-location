@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/kelseyhightower/envconfig"
 	"net/http"
 	"time"
-	"github.com/kelseyhightower/envconfig"
 )
 
 var API_URL = "https://projectzerothree.info/api.php?format=json"
@@ -36,6 +36,7 @@ type AllRegionResults struct {
 	Regions []RegionalPrices `json:"regions,omitempty"`
 }
 
+// curl prototype
 // curl -L https://projectzerothree.info/api.php\?format\=json | jq '.regions[] | select(.region=="All") | .prices[] | select(.type=="U91") | .lng,.lat'
 func main() {
 	var cfg Config
@@ -65,6 +66,7 @@ func main() {
 			prices := r.Prices
 			for _, t := range prices {
 				if t.Type == cfg.FuelType {
+					// TODO: add error-handling here when coordinates can't be located
 					fmt.Print("Latitude（经度）:", t.Lat, "\n", "Longitude（纬度）:", t.Lng, "\n")
 				}
 			}
